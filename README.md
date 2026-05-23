@@ -64,17 +64,36 @@ This figure shows the simulated ECG waveform generated in MATLAB, displaying reg
 
 ---
 
-### 2. RAW ECG Signal (First 5 Seconds)
-This figure shows the raw, unprocessed ECG signal loaded from the input file. The signal contains significant noise and baseline wander, making it difficult to identify cardiac features directly.
+### 2. RAW vs Filtered ECG Signal
+The RAW ECG signal contains significant noise and baseline wander, making it difficult to identify cardiac features directly.
+After applying the bandpass filter (0.5 Hz – 40 Hz), the noise is significantly reduced and the QRS complexes are clearly visible, making the signal suitable for R-peak detection and wavelet decomposition.
 
-![RAW ECG Signal](raw_ecg.png)
+| RAW ECG Signal | Filtered ECG Signal |
+|---|---|
+| ![RAW ECG Signal](raw_ecg.png) | ![Filtered ECG Signal](filtered_ecg.png) |
 
 ---
 
-### 3. Filtered ECG Signal (First 5 Seconds)
-This figure shows the ECG signal after applying the bandpass filter (0.5 Hz – 40 Hz). The noise is significantly reduced, and the QRS complexes are clearly visible, making the signal suitable for R-peak detection and wavelet decomposition.
+### 3. Sample 1 — Cardiac Disease Detection
+This figure shows the zoomed input ECG signal, detected R-peaks, and two levels of wavelet decomposition for Sample 1.
+The detected peaks (red triangles) align with the QRS complex, confirming accurate heartbeat detection.
 
-![Filtered ECG Signal](filtered_ecg.png)
+![Sample 1](sample1_op.png)
+
+---
+
+### 4. Sample 2 — Cardiac Disease Detection
+This figure shows the same 4-subplot analysis for Sample 2.
+The wavelet coefficients (Wavelet 1 and Wavelet 2) clearly isolate the dominant QRS peak across both decomposition levels.
+
+![Sample 2](sample2_op.png)
+
+---
+
+### 5. Overview — Heart Disease Detection Output
+This figure shows the complete MATLAB output including the 4-subplot ECG analysis along with the command window results displaying peak count, estimated heart rate, disease flag, and signal quality.
+
+![Overview](overview_op.png)
 
 ---
 
