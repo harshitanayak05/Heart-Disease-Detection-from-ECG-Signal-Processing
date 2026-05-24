@@ -60,7 +60,9 @@ A MATLAB-based system that reads ECG signals in standard formats, filters noise,
 ### 1. MATLAB Simulated ECG Waveform
 This figure shows the simulated ECG waveform generated in MATLAB, displaying regular cardiac cycles over a 10-second window with amplitude ranging from -2 mV to 2 mV.
 
-![ECG Waveform](ecg_waveform.png)
+<p align="center">
+  <img src="ecg_waveform.png" width="450">
+</p>
 
 ---
 
@@ -78,7 +80,9 @@ After applying the bandpass filter (0.5 Hz – 40 Hz), the noise is significantl
 This figure shows the zoomed input ECG signal, detected R-peaks, and two levels of wavelet decomposition for Sample 1.
 The detected peaks (red triangles) align with the QRS complex, confirming accurate heartbeat detection.
 
-![Sample 1](sample1_op.png)
+<p align="center">
+  <img src="sample1_op.png" width="450">
+</p>
 
 ---
 
@@ -86,14 +90,18 @@ The detected peaks (red triangles) align with the QRS complex, confirming accura
 This figure shows the same 4-subplot analysis for Sample 2.
 The wavelet coefficients (Wavelet 1 and Wavelet 2) clearly isolate the dominant QRS peak across both decomposition levels.
 
-![Sample 2](sample2_op.png)
+<p align="center">
+  <img src="sample2_op.png" width="450">
+</p>
 
 ---
 
 ### 5. Overview — Heart Disease Detection Output
 This figure shows the complete MATLAB output including the 4-subplot ECG analysis along with the command window results displaying peak count, estimated heart rate, disease flag, and signal quality.
 
-![Overview](overview_op.png)
+<p align="center">
+  <img src="overview_op.png" width="450">
+</p>
 
 ---
 
